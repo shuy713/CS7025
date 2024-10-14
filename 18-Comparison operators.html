@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    console.log(3 > 5);//false
+    console.log(3 >= 3);//true
+    console.log(2 == 2);//true
+    console.log(2 == '2');//true,Comparison operators have implicit conversions
+    console.log(2 === '2')//false
+    console.log(NaN === NaN);//false，NaN Not equal to any
+
+    console.log('-----------------------------');
+    console.log('a' < 'b');//true Because in the ascii code table a is 97 and b is 98
+    console.log('aa' < 'ab');//true,Compare the first one first, and then compare the second one. Chinese is compared based on pinyin.
+    console.log('aa' < 'abc');//true Because there is no third one on the left 
+  </script>
+</body>
+
+</html>

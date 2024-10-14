@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h2 {
+      text-align: center;
+    }
+
+    table {
+      height: 80px;
+      width: 600px;
+      margin: auto;
+      justify-content: center;
+    }
+
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+      text-align: center;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Order confirmation</h2>
+
+
+  <script>
+    // enter
+    let price = + prompt('Please enter price')
+    let num = + prompt('Please enter number')
+    let address = prompt('Please enter address')
+
+    //caculate
+    let total = num * price
+
+    //page printer
+    document.write(`
+    <table>
+    <tr>
+      <th>Product name</th>
+      <th>product price</th>
+      <th>product total numbe</th>
+      <th>product total price</th>
+      <th>address</th>
+    </tr>
+
+    <tr>
+      <td>xiaomi</td>
+      <td>${price}</td>
+      <td>${num}</td>
+      <td>${total}yuan</td>
+      <td>${address}</td>
+    </tr>
+  </table>
+  `)
+  </script>
+
+</body>
+
+</html>

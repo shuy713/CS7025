@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //user enter
+    let num1 = +prompt('Please enter the first number')
+    let num2 = +prompt('Please enter the second number')
+    let signal = prompt('Please enter operator')
+    //wrong：let signal = +prompt（‘Please enter operator’）
+
+    //jump output
+    switch (signal) {
+      case '+':
+        console.log(`addition operation${num1 + num2}`);
+        alert(`addition operation${num1 + num2}`)
+        break
+      case '-':
+        console.log(`subtraction operation${num1 - num2}`);
+        alert(`subtraction operation${num1 - num2}`)
+        break
+      case '*':
+        console.log(`Multiplication operation${num1 * num2}`);
+        alert(`Multiplication operation${num1 * num2}`)
+        break
+      case '/':
+        console.log(`Division operation${num1 / num2}`);
+        alert(`Division operation${num1 / num2}`)
+        break
+    }
+  </script>
+</body>
+
+</html>
