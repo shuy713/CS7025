@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table</title>
+  <style>
+    table {
+      border: solid 1px pink;
+      text-align: center;
+      font-size: 20px;
+      color: aquamarine;
+      border-collapse: collapse;
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    td {
+      border: solid 1px pink;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    document.write('<table><tbody>'); // 开始表格
+
+    for (let i = 1; i <= 9; i++) {
+      document.write('<tr>'); // 开始新行
+      for (let j = 1; j <= i; j++) {
+        const num = i * j;
+        document.write(`<td>${j} x ${i} = ${num}</td>`); // 添加单元格内容
+      }
+      document.write('</tr>'); // 结束行
+    }
+
+    document.write('</tbody></table>'); // 结束表格
+  </script>
+</body>
+
+</html>

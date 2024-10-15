@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let arr = [2, 6, 1, 7, 4]
+    let sum = 0 //容易不去定义这个sum，就是undefined+‘1’=NAN
+    for (let i = 0; i < arr.length; i++) {
+      sum += arr[i]
+    }
+    document.write(`和为${sum}<br>`)
+
+    num = sum / arr.length
+    document.write(`平均值为${num}`)
+  </script>
+</body>
+
+</html>
