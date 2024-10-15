@@ -26,20 +26,24 @@
       position: relative;
     }
 
-    /* 控制季度名称的位置 */
+
+    /* Control the position of the quarter name */
     .Q h6 {
       width: 100px;
       font-size: 10px;
       position: absolute;
       bottom: -25px;
-      /* 让文字位于框框外 */
+
+      /* Let the text be outside the box */
       left: 50%;
       transform: translateX(-50%);
       margin: 0;
-      /* 清除默认的 h4 上下边距 */
+
+      /* Clear the default h4 top and bottom margins */
     }
 
-    /* 数字的位置 */
+
+    /* Number position */
     .Q span {
       width: 100px;
       position: absolute;
@@ -54,49 +58,50 @@
   <div class="box">
     <div class="Q" style="height: 123px;">
       <span> 1 </span>
-      <h6>第一季度</h6>
+      <h6>first quarter</h6>
     </div>
 
     <div class="Q" style="height: 223px;">
       <span> 2 </span>
-      <h6>第二季度</h6>
+      <h6>second quarter</h6>
     </div>
 
     <div class="Q" style="height: 123px;">
       <span> 3 </span>
-      <h6>第三季度</h6>
+      <h6>third quarter</h6>
     </div>
 
     <div class="Q" style="height: 123px;">
       <span> 4 </span>
-      <h6>第四季度</h6>
+      <h6>fourth quarter</h6>
     </div>
   </div>
 
   <script>
-    //1.四次弹框效果
-    //声明一个新的数组
+    //1. Four pop-up effects
+    //Declare a new array
     let arr = []
     for (let i = 1; i <= 4; i++) {
-      let num = prompt(`请输入${i}季度的数据`)
+      let num = prompt(`Please enter${i}quarterly data`)
       arr.push(num)
     }
     // console.log(arr);
 
-    //盒子开头
+    //Start of box
     document.write(`<div class="box">`)
 
-    //盒子中间 利用循环的形式 跟数组有关系
+
+    //The middle of the box uses the form of loop, which is related to the array
     for (let i = 0; i < arr.length; i++) {
       document.write(`
         <div class="Q" style="height: ${arr[i]}px;">
           <span> ${arr[i]} </span>
-          <h6>第 ${i + 1} 季度</h6>
+          <h6> ${i + 1} quarter </h6>
         </div>
       `)
     }
 
-    //盒子结尾
+    //end of box
     document.write(`</div>`)
 
   </script>

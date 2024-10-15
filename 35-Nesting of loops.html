@@ -10,23 +10,23 @@
 <body>
   <script>
     // for (let i = 1; i <= 5; i++) {
-    //   document.write(`第${i}天<br>`)
-    //   for (let n = 1; n <= 5; n++) {
-    //     document.write(`记住了第${n}个单词<br>`)
-    //   }
+    // document.write(`Day ${i}<br>`)
+    // for (let n = 1; n <= 5; n++) {
+    // document.write(`Remembered the ${n}th word<br>`)
+    // }
     // }
 
-    //打印5行5列的小星星
+    //Print small stars in 5 rows and 5 columns
     // for (let i = 1; i <= 5; i++) {
-    //   for (let j = 1; j <= 5; j++) {
-    //     document.write(`*`)
-    //   }
-    //   document.write(`<br>`)
+    // for (let j = 1; j <= 5; j++) {
+    // document.write(`*`)
+    // }
+    // document.write(`<br>`)
     // }
 
-    // 打印x（自己输入）行y（自己输入）列的小星星
-    let row = +prompt('请输入行数')
-    let col = +prompt('请输入列数')
+    //Print the little stars in the x (self-input) row and y (self-input) column
+    let row = +prompt('Please enter the number of rows')
+    let col = +prompt('Please enter the number of columns')
     for (let i = 1; i <= row; i++) {
       for (let j = 1; j <= col; j++) {
         document.write(`*`)
