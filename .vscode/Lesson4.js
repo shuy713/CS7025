@@ -25,3 +25,28 @@ button.addEventListener("click", () => {
 });
 
 // Exercise 4: State Management 
+const link = document.createElement("a");
+link.href = "#";
+link.textContent = "Hover and Click Me!";
+link.style.color = "black";
+document.body.appendChild(link);
+
+link.addEventListener("mouseover", () => {
+    link.style.color = "blue";
+});
+link.addEventListener("click", (e) => {
+    e.preventDefault(); // Prevent default link behavior
+    link.style.color = "red";
+});
+link.addEventListener("mouseleave", () => {
+    link.style.color = "black";
+});
+
+
+// Exercise 5: DOM Manipulation 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = "DOM Loaded Successfully!";
+    document.body.appendChild(paragraph);
+});
