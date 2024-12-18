@@ -3,10 +3,7 @@ let multiArray = [
     [0, 1, 2, 31, [2, 3, 4, 51, [1, 2, 3, 4, 5]]]
   ];
   
-  // Access the element `2` in the first array
-  console.log("Element m[0][2]:", multiArray[0][2]); // Output: 2
-  
-  // Access the element `4` inside the innermost array
+  console.log("Element m[0][2]:", multiArray[0][2]); /
   console.log("Element m[0][4][4][3]:", multiArray[0][4][4][3]); // Output: 4
   
   // Arrays of arrays and accessing nested elements
