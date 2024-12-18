@@ -6,7 +6,6 @@ let multiArray = [
   console.log("Element m[0][2]:", multiArray[0][2]); 
   console.log("Element m[0][4][4][3]:", multiArray[0][4][4][3]); // Output: 4
   
-  // Arrays of arrays and accessing nested elements
   let q = [1, [1, 2, 2], [0, [2, 1], 9, 5], [1, 12, 3], 1, 13];
   console.log("Element q[2][1][1]:", q[2][1][1]); // Output: 1
   
