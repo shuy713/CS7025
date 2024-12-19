@@ -3,29 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Whack-A-Mole Game</title>
+  <title>Whack-a-Mole</title>
   <link rel="stylesheet" href="WhackaMole.css">
 </head>
 <body>
   <div class="game-container">
-    <h1>Whack-A-Mole</h1>
+    <h1>Whack a Mole</h1>
     <div class="score-board">
-      <p>Score: <span id="score">0</span></p>
-      <p>Time Left: <span id="time-left">30</span>s</p>
+      <span>Score: <span id="score">0</span></span>
+      <span>Time Left: <span id="time-left">60</span></span>
     </div>
     <div class="grid">
-      <!-- 9 holes for moles -->
-      <div class="hole" id="hole1"></div>
-      <div class="hole" id="hole2"></div>
-      <div class="hole" id="hole3"></div>
-      <div class="hole" id="hole4"></div>
-      <div class="hole" id="hole5"></div>
-      <div class="hole" id="hole6"></div>
-      <div class="hole" id="hole7"></div>
-      <div class="hole" id="hole8"></div>
-      <div class="hole" id="hole9"></div>
+      <!-- 16 holes in a 4x4 grid -->
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
+      <div class="hole"><img src="mole.png" alt="Mole" class="mole"></div>
     </div>
-    <button id="start-btn">Start Game</button>
+    <div class="controls">
+      <button id="start-btn">Start</button>
+      <button id="pause-btn" disabled>Pause</button>
+    </div>
   </div>
   <script src="WhackaMole.js"></script>
 </body>
