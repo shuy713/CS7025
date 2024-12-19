@@ -3,7 +3,7 @@ let timeLeft = 30;
 let timerId = null;
 let moleTimer = null;
 let paused = false;
-let moleInterval = 2000;  // 初始老鼠出现的间隔时间（2秒）
+let moleInterval = 1000;  
 
 const holes = document.querySelectorAll('.hole');
 const scoreDisplay = document.getElementById('score');
@@ -15,10 +15,10 @@ let activeHole = null;
 
 // Function to randomly select a hole
 function randomHole() {
-  holes.forEach(hole => hole.classList.remove('active')); // Clear previous active hole
+  holes.forEach(hole => hole.classList.remove('active')); 
   const randomIndex = Math.floor(Math.random() * holes.length);
   activeHole = holes[randomIndex];
-  activeHole.classList.add('active'); // Activate random hole
+  activeHole.classList.add('active'); 
 }
 
 // Function to start the game
@@ -30,7 +30,7 @@ function startGame() {
 
   score = 0;
   timeLeft = 60;
-  moleInterval = 1000; // Reset the mole appearance interval to initial value
+  moleInterval = 1000; 
   scoreDisplay.textContent = score;
   timeLeftDisplay.textContent = timeLeft;
 

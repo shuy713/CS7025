@@ -46,11 +46,11 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none; /* 默认隐藏老鼠 */
+  display: none; 
 }
 
 .hole.active .mole {
-  display: block; /* 激活时显示老鼠 */
+  display: block; 
 }
 
 button {
