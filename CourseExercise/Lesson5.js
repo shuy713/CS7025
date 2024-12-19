@@ -9,11 +9,9 @@ let multiArray = [
   let q = [1, [1, 2, 2], [0, [2, 1], 9, 5], [1, 12, 3], 1, 13];
   console.log("Element q[2][1][1]:", q[2][1][1]); // Output: 1
   
-  // Shallow Copy Practice
   let arr1 = [1, 2, 3];
   let shallowCopy1 = [...arr1];
   
-  // Modify the original array
   arr1.push(4);
   
   console.log("Original array after push:", arr1); // Output: [1, 2, 3, 4]
