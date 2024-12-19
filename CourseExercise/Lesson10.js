@@ -5,7 +5,7 @@
 const teams = [
     { team_id: 1, team_name: "Ireland" },
     { team_id: 2, team_name: "France" },
-    { team_id: 3, team_name: "England" },
+    { team_id: 3, team_name: "China" },
 ];
 
 // Entity Table: Players
@@ -14,7 +14,7 @@ const players = [
     { player_id: 102, player_name: "Paul", player_team: 1 },
     { player_id: 103, player_name: "Luc", player_team: 2 },
     { player_id: 104, player_name: "Pierre", player_team: 2 },
-    { player_id: 105, player_name: "Tom", player_team: 3 },
+    { player_id: 105, player_name: "Inch", player_team: 3 },
 ];
 
 // Management Table: Matches
