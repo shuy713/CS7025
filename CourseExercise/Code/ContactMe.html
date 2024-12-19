@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+
+  <!-- CSS external style sheet -->
+  <link rel="stylesheet" href="Portfolio.css">
+
+  <!-- Font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body
+  style="  background: url('../Image/ContactMe/background-image.gif') no-repeat center center fixed;background-size: cover;">
+
+  <!-- Header with Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="research">
+        <a href="home.html" onclick="navigateTo('Home', event)">Home</a>
+        <a href="About me.html" onclick="navigateTo('About Me', event)">About me</a>
+        <a href="Work projects.html" onclick="navigateTo('Work Projects', event)">Work Projects</a>
+        <a href="School projects.html" onclick="navigateTo('School Projects', event)">School Projects</a>
+        <a href="Contact me.html" class="contactme-link" onclick="navigateTo('Contact Me', event)">Contact Me</a>
+        <div class="slider"></div>
+      </div>
+      <div class="icon-container">
+        <img src="../Image/Home/Phone.png" alt="Icon 1" class="icon">
+        <img src="../Image/Home/mail.png" alt="Icon 2" class="icon">
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-info">
+      <p>Please feel free to contact me</p>
+      <h2>CONTACT ME</h2>
+      <h1>SHU YINQI / BELLA</h1>
+      <ul>
+        <li><img src="../Image/ContactMe/email.png" alt="" class="icon-email"><a href="#">Shuy@tcd.ie</a></li>
+        <li><img src="../Image/ContactMe/phone.png" alt="" class="icon-email"><a href="#"> +353 0877802712</a></li>
+        <li><img src="../Image/ContactMe/wechat.png" alt="" class="icon-email"> <a href="#">Inch-0000</a></li>
+        <li><img src="../Image/ContactMe/ig.png" alt="" class="icon-email"><a href="#"> inch713</a></li>
+      </ul>
+    </div>
+
+    <div class="contact-image">
+      <img src="../Image/Home/character illustration.png" alt="3D Styled Girl Character">
+    </div>
+
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slider = document.querySelector('.slider');
+      const links = document.querySelectorAll('.navbar a');
+
+      // Set initial slider position to the first link (Home)
+      let currentActive = document.querySelector('.contactme-link');
+      setSliderPosition(currentActive);
+
+      // Function to move the slider to a target link
+      function setSliderPosition(element) {
+        slider.style.width = `${element.offsetWidth}px`;
+        slider.style.left = `${element.offsetLeft}px`;
+      }
+
+      // Function for page navigation
+      function navigateTo(page, event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        const targetLink = event.target;
+        setSliderPosition(targetLink);
+
+        // Simulate page navigation by setting location.href
+        if (page === 'Home') {
+          window.location.href = 'Home.html';
+        } else if (page === 'About Me') {
+          window.location.href = 'About me.html';
+        } else if (page === 'Work Projects') {
+          window.location.href = 'Work projects.html';
+        } else if (page === 'School Projects') {
+          window.location.href = 'School projects.html';
+        } else if (page === 'Contact Me') {
+          window.location.href = 'Contact me.html';
+        }
+      }
+
+      // Add event listeners for hover and click
+      links.forEach(link => {
+        link.addEventListener('mouseover', (e) => setSliderPosition(e.target)); // Move slider on hover
+        link.addEventListener('click', (e) => {
+          currentActive = e.target; // Set clicked link as active
+          setSliderPosition(currentActive);
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

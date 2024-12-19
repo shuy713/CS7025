@@ -1,0 +1,893 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.header-intro-wrapper {
+  background: url('../Image/Home/backgroundimage\ gif.gif') no-repeat center center fixed;
+  background-size: cover;
+  height: 905px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  font-weight: 500;
+  font-size: 20px;
+  align-items: center;
+  padding: 50px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar .research {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  width: 150px;
+  height: 20px;
+  margin: 0 50px 0 40px;
+  color: #616161;
+  text-decoration: none;
+  text-align: center;
+  z-index: 1;
+}
+
+.icon-container {
+  margin-left: 75px;
+  display: flex;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 65px;
+}
+
+.slider {
+  position: absolute;
+  bottom: -5px;
+  height: 30px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.2);
+  left: 0;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(66, 66, 66, 0.1);
+  z-index: 0;
+}
+
+.intro {
+  padding: 0 930px 0 0;
+  margin-top: 100px;
+  text-align: center;
+  color: #616161;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro h1 {
+  margin-bottom: 40px;
+  font-family: "Inter", serif;
+  font-size: 64px;
+  color: #616161;
+  text-align: right;
+  font-family: "Inter", serif;
+}
+
+.intro h2 {
+  font-size: 25px;
+  margin: 7px 0 0 0;
+  height: 25px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.intro p {
+  height: 18px;
+  margin-bottom: 18px;
+  text-align: right;
+  font-size: 18px;
+  color: #616161;
+  font-family: "Inter", serif;
+}
+
+
+/* Home, Work projects, School projects */
+.projects-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+}
+
+.projects-section h2 {
+  margin: 20px 0 0 50px;
+  font-size: 28px;
+  font-weight: 500;
+  color: #616161;
+}
+
+.projects {
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.project {
+  height: 500px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0 0 50px 0;
+  padding: 20px;
+}
+
+.project img {
+  width: 626px;
+  height: 344px;
+  border-radius: 20px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.project-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-info1 a {
+  font-family: "Inter", serif;
+  text-decoration: none;
+}
+
+.project-info1 h3 {
+  text-align: left;
+  margin: 18px 0 10px 0;
+  font-family: "Inter", serif;
+  font-weight: 500;
+  font-size: 18px;
+  height: 18px;
+  color: #616161;
+}
+
+.project-info1 p {
+  margin-top: 20px;
+  text-align: left;
+  height: 16px;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  color: #616161;
+}
+
+.view-project-btn {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Inter", serif;
+  color: #616161;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-project-btn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* About me */
+.container {
+  display: flex;
+  max-width: 1440px;
+  margin: 40px auto;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 70px;
+  font-family: "Inter", serif;
+}
+
+.contact-info a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Inter", serif;
+  text-align: left;
+  color: #616161;
+
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  padding-left: 70px;
+  font-family: "Inter", serif;
+}
+
+.profile-img {
+  width: 349px;
+  height: 366px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.icon-img {
+  margin-right: 12px;
+}
+
+.left-section h3 {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #616161;
+}
+
+.container p,
+ul {
+  color: #616161;
+  display: flex;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.contact-info,
+.education,
+.skills,
+.languages,
+.publications,
+.hobbies {
+  margin-bottom: 20px;
+
+}
+
+.contact-info,
+.education,
+.skills,
+.languages,
+.publications,
+.hobbies p {
+  color: #616161;
+  font-size: 16px;
+}
+
+.skills ul {
+  color: #616161;
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.skills li {
+  margin-right: 30px;
+}
+
+.hobbies ul {
+  color: #616161;
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.hobbies li {
+  margin-right: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #616161;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #616161;
+}
+
+.right-section h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #616161;
+  margin: 40px 0 10px 0;
+}
+
+.right-section h4 {
+  font-size: 16px;
+  font-style: italic;
+  color: #616161;
+  font-weight: 500;
+}
+
+.icon2-img {
+  margin-right: 10px;
+}
+
+.awards div {
+  margin-top: 10px;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  color: #616161;
+}
+
+.awards span {
+  text-align: left;
+  font-size: 16px;
+}
+
+.experience h2 {
+  margin-top: 30px
+}
+
+.experience h3 {
+  margin: 30px 0 10px 0;
+}
+
+.academic h4 {
+  font-style: normal;
+  font-size: 18px;
+}
+
+
+/* Work project1 */
+.workproject1-first-page {
+  margin-top: 10px;
+  background: url('../Image/WorkProjects/background\ image-2.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+}
+
+.workproject1-first-page .introduce h2 {
+  margin-top: 20px;
+  margin-left: 50px;
+  height: 28px;
+  font-family: "Inter", serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: #616161;
+}
+
+.workproject1-first-page .introduce h3 {
+  margin: 30px 0 10px 50px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #616161;
+}
+
+.workproject1-first-page .introduce p {
+  margin: 10px 50px 0 50px;
+  font-size: 16px;
+  color: #616161;
+}
+
+.workproject1-first-page .research-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 400px;
+  margin: 10px 50px 0 50px;
+  text-align: center;
+}
+
+.workproject1-first-page .research-grid img {
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.workproject1-first-page .image-item {
+  width: 505px;
+  align-items: center;
+  text-align: center;
+}
+
+.image-item p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  color: #616161;
+}
+
+.workproject1-second-page {
+  margin-top: 10px;
+  background: url('../Image/WorkProjects/background\ image-2.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Scene-graph {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 50px 0 50px;
+}
+
+.workproject1-second-page h3 {
+  margin: 30px 0 30px 50px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #616161;
+}
+
+.Scene-grap h1 {
+  display: inline-block;
+  margin: 5px;
+  height: auto;
+}
+
+.Scene-graph img {
+  height: auto;
+}
+
+.Scene-graph p {
+  text-align: center;
+  font-size: 18px;
+  color: #616161;
+}
+
+.design-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.design-details img {
+  margin-left: 50px;
+}
+
+.design-details h4 {
+  margin-left: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #616161;
+}
+
+.design-details p {
+  margin: 10px 0 100px 50px;
+  font-size: 16px;
+  color: #616161;
+}
+
+.workproject1-third-page {
+  margin-top: 10px;
+  background: url('../Image/WorkProjects/background\ image-2.gif') no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px;
+}
+
+.workproject1-third-page h3 {
+  margin: 30px 0 0 50px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #616161;
+}
+
+.workproject1-third-page h4 {
+  margin: 20px 0 20px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #7743DB;
+}
+
+.workproject1-third-page h5 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #616161;
+}
+
+.workproject1-third-page p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #616161;
+}
+
+.session-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+
+/* Contact me */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 700px;
+  padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px auto;
+  margin-bottom: 0px;
+}
+
+.contact-info {
+  color: #616161;
+  width: 45%;
+}
+
+.contact-info p {
+  font-size: 18px;
+  color: #616161;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  margin: 60px 0 30px;
+}
+
+.contact-info h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #616161;
+}
+
+.contact-info ul {
+  display: inline-block;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-info ul li {
+  margin-bottom: 20px;
+}
+
+.contact-info a {
+  color: #616161;
+  font-size: 16px;
+  font-family: "Inter", serif;
+  text-decoration: none;
+}
+
+.contact-info ul li img {
+  margin-right: 20px;
+}
+
+.contact-image {
+  width: 45%;
+  text-align: center;
+}
+
+.contact-image img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+
+/* School Project1 */
+.schoolproject1-second-page {
+  padding-top: 40px;
+  margin-top: 20px;
+  background: url('../Image/SchoolProjects/background\ image.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: block;
+  height: auto;
+}
+
+.schoolproject1-second-page .introduce h2 {
+  margin: 0 0 0 50px;
+  font-weight: 500;
+  font-size: 28px;
+  color: #616161;
+}
+
+.schoolproject1-second-page .introduce h3 {
+  margin: 30px 0 10px 50px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #616161;
+}
+
+.schoolproject1-second-page .introduce p {
+  margin: 10px 0 0 50px;
+  font-size: 16px;
+  color: #616161;
+}
+
+
+.schoolproject1-second-page .research-grid {
+  display: block;
+  margin: 10px 0 0 50px;
+  text-align: center;
+  align-items: center;
+}
+
+
+.schoolproject1-second-page .research-grid p {
+  margin: 30px 0 0 50px;
+  font-size: 16px;
+  color: #616161;
+}
+
+.schoolproject1-second-page .research-grid img {
+  width: 1342px;
+}
+
+
+.schoolproject1-third-page {
+  padding-top: 40px;
+  margin-top: 10px;
+  background: url('../Image/SchoolProjects/background\ image.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: block;
+  height: auto;
+}
+
+.schoolproject1-third-page img {
+  width: 1342px;
+  margin-bottom: 30px;
+}
+
+.schoolproject1-third-page .introduce h2 {
+  margin: 0 0 0 50px;
+  font-weight: 500;
+  font-size: 28px;
+  color: #616161;
+}
+
+.schoolproject1-third-page .introduce h3 {
+  margin: 0 0 10px 50px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #616161;
+}
+
+.schoolproject1-third-page .introduce p {
+  margin: 10px 0 0 50px;
+  font-size: 16px;
+  color: #616161;
+}
+
+.schoolproject1-fourth-page {
+  padding-top: 40px;
+  margin-top: 10px;
+  background: url('../Image/SchoolProjects/background\ image.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: block;
+  height: auto;
+}
+
+.schoolproject1-fourth-page .research-grid {
+  display: block;
+  margin: 10px 0 0 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.schoolproject1-fourth-page img {
+  width: 1342px;
+  margin-bottom: 30px;
+}
+
+.schoolproject1-fourth-page h2 {
+  margin: 0 0 0 50px;
+  font-weight: 500;
+  font-size: 28px;
+  color: #616161;
+}
+
+.schoolproject1-fifth-page {
+  padding-top: 40px;
+  margin-top: 10px;
+  background: url('../Image/SchoolProjects/background\ image.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: block;
+  height: auto;
+}
+
+.schoolproject1-fifth-page .research-grid {
+  display: block;
+  margin: 10px 0 0 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.schoolproject1-fifth-page img {
+  width: 1342px;
+  margin-bottom: 30px;
+}
+
+.schoolproject1-fifth-page h2 {
+  margin: 0 0 0 50px;
+  font-weight: 500;
+  font-size: 28px;
+  color: #616161;
+}
+
+.schoolproject1-fifth-page p {
+  margin: 10px 0 0 50px;
+  font-size: 16px;
+  color: #616161;
+}
+
+.schoolproject1-sixth-page {
+  padding-top: 40px;
+  margin-top: 10px;
+  background: url('../Image/SchoolProjects/background\ image.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: block;
+  height: auto;
+}
+
+.schoolproject1-sixth-page .research-grid {
+  display: block;
+  margin: 10px 0 0 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.schoolproject1-sixth-page img {
+  width: 1342px;
+  margin-bottom: 30px;
+}
+
+.schoolproject1-sixth-page h2 {
+  margin: 0 0 0 50px;
+  font-weight: 500;
+  font-size: 28px;
+  color: #616161;
+}
+
+.schoolproject1-seventh-page {
+  padding-top: 40px;
+  margin-top: 10px;
+  background: url('../Image/SchoolProjects/background\ image.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: block;
+  height: auto;
+}
+
+.schoolproject1-seventh-page .research-grid {
+  display: block;
+  margin: 10px 0 0 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.schoolproject1-seventh-page img {
+  width: 1342px;
+  margin-bottom: 30px;
+}
+
+.schoolproject1-seventh-page h2 {
+  margin: 0 0 0 50px;
+  font-weight: 500;
+  font-size: 28px;
+  color: #616161;
+}
+
+.schoolproject1-seventh-page p {
+  margin: 10px 0 0 50px;
+  font-size: 16px;
+  color: #616161;
+}
+
+.schoolproject1-eighth-page {
+  padding-top: 40px;
+  margin-top: 10px;
+  background: url('../Image/SchoolProjects/background\ image.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: block;
+  height: auto;
+}
+
+.schoolproject1-eighth-page .research-grid {
+  display: block;
+  margin: 10px 0 0 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.schoolproject1-eighth-page img {
+  width: 1342px;
+  margin-bottom: 30px;
+}
+
+.schoolproject1-eighth-page h2 {
+  margin: 0 0 0 50px;
+  font-weight: 500;
+  font-size: 28px;
+  color: #616161;
+}
+
+.schoolproject1-ninth-page {
+  padding-top: 40px;
+  margin-top: 10px;
+  background: url('../Image/SchoolProjects/background\ image.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: block;
+  height: auto;
+}
+
+.schoolproject1-ninth-page .research-grid {
+  display: block;
+  margin: 10px 0 0 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.schoolproject1-ninth-page img {
+  width: 1342px;
+  margin-bottom: 30px;
+}
+
+.schoolproject1-ninth-page h2 {
+  margin: 0 0 0 50px;
+  font-weight: 500;
+  font-size: 28px;
+  color: #616161;
+}
+
+.schoolproject1-tenth-page {
+  padding-top: 40px;
+  margin-top: 10px;
+  background: url('../Image/SchoolProjects/background\ image.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: block;
+  height: auto;
+}
+
+.schoolproject1-tenth-page .research-grid {
+  display: block;
+  margin: 10px 0 0 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.schoolproject1-tenth-page img {
+  width: 1342px;
+  margin-bottom: 30px;
+}
+
+.schoolproject1-tenth-page h2 {
+  margin: 0 0 0 50px;
+  font-weight: 500;
+  font-size: 28px;
+  color: #616161;
+}
+
+
+/* footer */
+footer {
+  padding: 18px;
+  text-align: center;
+  background: transparent;
+  margin-top: 10px;
+  width: 100%;
+}
+
+footer a {
+  color: #616161;
+  text-decoration: none;
+  font-family: "Inter", serif;
+  font-weight: 500;
+}

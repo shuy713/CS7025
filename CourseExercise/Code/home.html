@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Shu Yinqi</title>
+
+  <!-- CSS external style sheet -->
+  <link rel="stylesheet" href="Portfolio.css">
+
+  <!-- Font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Wrapper for Header and Intro -->
+  <div class="header-intro-wrapper" style="  background: url('../Image/Home/backgroundimage\ gif.gif') no-repeat center center fixed;
+  background-size: cover;">
+    <!-- Header with Navigation -->
+    <header>
+      <nav class="navbar">
+        <div class="research">
+          <a href="home.html" class="home-link" onclick="navigateTo('Home', event)">Home</a>
+          <a href="AboutMe.html" onclick="navigateTo('About Me', event)">About me</a>
+          <a href="WorkProjects.html" onclick="navigateTo('Work Projects', event)">Work Projects</a>
+          <a href="SchoolProjects.html" onclick="navigateTo('School Projects', event)">School Projects</a>
+          <a href="ContactMe.html" onclick="navigateTo('Contact Me', event)">Contact Me</a>
+          <div class="slider"></div>
+        </div>
+        <div class="icon-container">
+          <img src="../Image/Home/Phone.png" alt="Icon 1" class="icon">
+          <img src="../Image/Home/mail.png" alt="Icon 2" class="icon">
+        </div>
+      </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+      <h1>MY PORTFOLIO</h1>
+      <h1>SHU YINQI</h1>
+      <p>Hello, I am Bella, an industrial and UI designer</p>
+      <p>This is my portfolio, which includes my</p>
+      <p>undergraduate and work projects
+      <h2> Welcome to my design world!</h2>
+      <div style="flex: 0 0 200px; position: relative; height: 100%;"> <!-- Image container -->
+        <img src="../Image/Home/character illustration.png" alt="Your Image Description"
+          style="position: absolute; bottom: -105px; right:-600px">
+      </div>
+    </section>
+  </div>
+
+  <!-- Projects Overview Section -->
+  <section class="projects-section" style="  background: url('../Image/Home/backgroundimage\ gif.gif') no-repeat center center fixed;
+  background-size: cover;">
+    <h2 style="margin: 50px 0 0 50px;">Project Overview</h2>
+
+    <section class="projects">
+      <!-- Project 1 -->
+      <div class="project">
+        <img src="../Image/Home/project1.png" alt="98 foot Teochew electric cruise">
+        <div class="project-info">
+          <div class="project-info1">
+            <p>Jun-Sep 2023</p>
+            <a href="WorkProjects.html">
+              <h3>98 foot Teochew electric cruise</h3>
+            </a>
+          </div>
+          <button class="view-project-btn" onclick="window.location.href='WorkProject1.html'">View Project</button>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project">
+        <img src="../Image/Home/project2.png" alt="Water cup - coffee cup">
+        <div class="project-info">
+          <div class="project-info1">
+            <p>Jun-Dec 2022</p>
+            <a href="#">
+              <h3>Water cup - coffee cup</h3>
+            </a>
+          </div>
+          <button class="view-project-btn" onclick="window.location.href='WorkProject1.html'">View Project</button>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project">
+        <img src="../Image/Home/project3.png" alt="5-A Side Blind Football Auxiliary Training Equipment">
+        <div class="project-info">
+          <div class="project-info1">
+            <p>Jan-Apr 2021</p>
+            <a href="SchoolProject1.html">
+              <h3>5-A Side Blind Football Auxiliary Training Equipment</h3>
+            </a>
+          </div>
+          <button class="view-project-btn" onclick="window.location.href='SchoolProject1.html'">View Project</button>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project">
+        <img src="../Image/Home/project4.png" alt="Activation of local agricultural products">
+        <div class="project-info">
+          <div class="project-info1">
+            <p>Apr-Oct 2021</p>
+            <a href="#">
+              <h3>Activation of local characteristic agricultural products</h3>
+            </a>
+          </div>
+          <button class="view-project-btn" onclick="window.location.href='SchoolProject1.html'">View Project</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <a href="#">Home</a>
+      <br>
+      <a href="#">shuy@tcd.ie</a>
+    </footer>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slider = document.querySelector('.slider');
+      const links = document.querySelectorAll('.navbar a');
+
+      // Set initial slider position to the first link (Home)
+      let currentActive = document.querySelector('.home-link');
+      setSliderPosition(currentActive);
+
+      // Function to move the slider to a target link
+      function setSliderPosition(element) {
+        slider.style.width = `${element.offsetWidth}px`;
+        slider.style.left = `${element.offsetLeft}px`;
+      }
+
+      // Function for page navigation
+      function navigateTo(page, event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        const targetLink = event.target;
+        setSliderPosition(targetLink);
+
+        // Simulate page navigation by setting location.href
+        if (page === 'Home') {
+          window.location.href = 'Home.html';
+        } else if (page === 'About Me') {
+          window.location.href = 'About me.html';
+        } else if (page === 'Work Projects') {
+          window.location.href = 'Work projects.html';
+        } else if (page === 'School Projects') {
+          window.location.href = 'School projects.html';
+        } else if (page === 'Contact Me') {
+          window.location.href = 'Contact me.html';
+        }
+      }
+
+      // Add event listeners for hover and click
+      links.forEach(link => {
+        link.addEventListener('mouseover', (e) => setSliderPosition(e.target)); // Move slider on hover
+        link.addEventListener('click', (e) => {
+          currentActive = e.target; // Set clicked link as active
+          setSliderPosition(currentActive);
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
