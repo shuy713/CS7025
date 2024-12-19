@@ -10,9 +10,9 @@ class Person {
     }
   }
   
-  // Create an instance of the Person class
   let shuyinqi = new Person("ShuYinqi", 25);
   shuyinqi.speak(); // Output: Hello, my name is ShuYinqi and I am 25 years old.
+  
   
   // Inheritance
   // Create a base class Animal
@@ -25,27 +25,25 @@ class Person {
     }
   }
   
-  // Extend Animal class with Fish
   class Fish extends Animal {
     move() {
       console.log(`${this.name} is swimming!`);
     }
   }
   
-  // Extend Animal class with Bird
   class Bird extends Animal {
     move() {
       console.log(`${this.name} is flying!`);
     }
   }
   
-  // Test inheritance
-  let goldfish = new Fish("Goldfish");
-  goldfish.move(); // Output: Goldfish is swimming!
+  let goldfish = new Fish("11");
+  goldfish.move(); // Output: 11 is swimming!
   
-  let parrot = new Bird("Parrot");
-  parrot.move(); // Output: Parrot is flying!
+  let parrot = new Bird("22");
+  parrot.move(); // Output: 22 is flying!
   
+
   // Encapsulation
   class BankAccount {
     #balance; // Private member
@@ -62,12 +60,11 @@ class Person {
     }
   }
   
-  // Test encapsulation
   let inchAccount = new BankAccount("Inch", 1000);
   inchAccount.deposit(200); // Output: Inch deposited $200. New balance: $1200
   console.log(inchAccount.getBalance()); // Output: The balance for Inch is $1200
-  // console.log(johnAccount.#balance); // Error: Private field '#balance' must be declared in an enclosing class
   
+
   // Polymorphism
   class Shape {
     area() {
