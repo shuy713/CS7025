@@ -1,5 +1,3 @@
-// Object-Oriented Programming Practice
-
 // Abstraction
 // Create a blueprint (class) for a Person
 class Person {
@@ -13,8 +11,8 @@ class Person {
   }
   
   // Create an instance of the Person class
-  let alice = new Person("Alice", 25);
-  alice.speak(); // Output: Hello, my name is Alice and I am 25 years old.
+  let shuyinqi = new Person("ShuYinqi", 25);
+  shuyinqi.speak(); // Output: Hello, my name is ShuYinqi and I am 25 years old.
   
   // Inheritance
   // Create a base class Animal
@@ -65,9 +63,9 @@ class Person {
   }
   
   // Test encapsulation
-  let johnAccount = new BankAccount("John", 500);
-  johnAccount.deposit(200); // Output: John deposited $200. New balance: $700
-  console.log(johnAccount.getBalance()); // Output: The balance for John is $700
+  let inchAccount = new BankAccount("Inch", 1000);
+  inchAccount.deposit(200); // Output: Inch deposited $200. New balance: $1200
+  console.log(inchAccount.getBalance()); // Output: The balance for Inch is $1200
   // console.log(johnAccount.#balance); // Error: Private field '#balance' must be declared in an enclosing class
   
   // Polymorphism

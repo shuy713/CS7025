@@ -10,11 +10,9 @@ const STUDENT = {
     }
   };
   
-  // Function to calculate age
   function calculateAge(a, b) {
     return a + b;
   }
   
-  // Accessing object properties in two ways
   console.log("Accessing firstName using STUDENT['firstName']:", STUDENT["firstName"]); // Output: Christiane
   console.log("Accessing firstName using STUDENT.firstName:", STUDENT.firstName); // Output: Christiane

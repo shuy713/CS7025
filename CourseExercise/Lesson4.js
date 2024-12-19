@@ -1,6 +1,6 @@
 // Exercise 1: Semicolon Practices 
 function greetUser() {
-    console.log("Hello, World"); // Always end with semicolon
+    console.log("Hello, World"); 
 }
 greetUser();
 
@@ -8,7 +8,7 @@ greetUser();
 // Exercise 2: Scope
 let students = 31;
 function countAbsentStudents() {
-    let absent = 3; // Fix: 'absent' declared properly within function scope
+    let absent = 4;
     students -= absent;
     console.log("Students left in class:", students);
 }
@@ -24,6 +24,9 @@ button.addEventListener("click", () => {
     console.log("Button clicked!");
 });
 
+button.style.padding = "10px";
+button.style.fontSize = "16px";
+
 // Exercise 4: State Management 
 const link = document.createElement("a");
 link.href = "#";
@@ -35,7 +38,7 @@ link.addEventListener("mouseover", () => {
     link.style.color = "blue";
 });
 link.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent default link behavior
+    e.preventDefault(); 
     link.style.color = "red";
 });
 link.addEventListener("mouseleave", () => {
@@ -43,10 +46,10 @@ link.addEventListener("mouseleave", () => {
 });
 
 
-// Exercise 5: DOM Manipulation 
-
+// Exercise 5: DOM Creation 
 document.addEventListener("DOMContentLoaded", () => {
-    const paragraph = document.createElement("p");
-    paragraph.textContent = "DOM Loaded Successfully!";
-    document.body.appendChild(paragraph);
+    const div = document.createElement("div");
+    div.textContent = "This is a dynamically created div!";
+    div.style.color = "blue"; 
+    document.body.appendChild(div); 
 });
