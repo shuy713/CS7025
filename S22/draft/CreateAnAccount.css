@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 1440px; 
+    height: 1364px; 
+    position: relative; 
+    background: #E2E2E2;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center;
+}
+
+.LeftImage{
+    width: 781px; 
+    height: 1024px; 
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+#CreateAnAccount {
+    position: absolute; 
+    left: 876px;
+    top: 226px;
+    color: black;
+    font-size: 32px;
+    font-family: sora, sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+#LogIn {
+    font-family: Onest;
+    position: absolute; 
+    left: 975px;
+    top: 716px;
+    text-align: center;
+}
+
+.login {
+    color: black;
+    font-size: 16px;
+    font-family: Onest;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.login {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#Information{
+    left: 876px; 
+    top: 325px; 
+    position: absolute;
+}
+
+#name{
+width: 440px;
+left: 876px; 
+top: 325px; 
+font-family: Onest;
+position: absolute;
+border-bottom:1px solid black;
+}
+
+.label {
+    display: block;
+    font-size: 18px;
+    font-family: Onest;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 0px; 
+    margin-right: 20px;
+}
+
+.custom-input {
+    width: 320px;
+    background-color:#E2E2E2;
+    height: 30px;
+    font-size: 16px;
+    font-family: Onest;
+    border: none; 
+    outline: none; 
+    padding: 5px 0 5px 20px; 
+}
+
+#email{
+    width: 440px;
+    font-family: Onest;
+    left: 876px; 
+    top: 421px; 
+    position: absolute;
+    border-bottom:1px solid black;
+}
+
+#password{
+    width: 440px;
+    left: 876px; 
+    top: 517px; 
+    font-family: Onest;
+    position: absolute;
+    border-bottom:1px solid black;
+}
+
+#signup-container {
+    text-align: center; 
+    left: 995px; 
+    top: 647px; 
+    position: absolute;
+    width:200px ;
+    height:45px ;
+    border-radius: 50px;
+    background-color: #4157E9; 
+}
+
+.signup-button {
+    background-color: #4157E9; 
+    color: #F9F9F9; 
+    font-size: 16px;
+    font-family: Onest;
+    font-weight: 400;
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+
+#footer {
+    width: 100%;
+    height: 340px;
+    background: #CDCDCD; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+#footer-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+#options {
+    margin-top: 70px;
+    opacity: 0.75;
+    color: #0A142F;
+    font-size: 12px;
+    font-family: Onest;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#options a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#options div{
+    margin-top: 60px;
+    width: 146px;
+}
+
+#footer-address {
+    margin-top: 70px;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #0A142F;
+    line-height: 22px;
+}
+
+#footer-address a {
+    text-decoration: underline;
+    color: #0A142F;
+}
+
+#footer-address span {
+font-size: 20px;
+font-style: Onest;
+font-weight: 400px;
+}
+
+#footer-logo img {
+    margin: 70px 0 0 120px;
+    width: 61px;
+    height: 59.9px;
+}

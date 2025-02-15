@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
+body {
+    font-family: 'Onest', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2 !important;
+
+}
+
+/* 导航栏 */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 让3个部分平分空间 */
+    padding: 0 120px!important;  /* 左右 120px */
+    background-color: #f2f2f2; /* 适当背景色 */
+    height: 111px;
+}
+
+.navbar-brand {
+    width: 153px; /* 固定宽度 */
+}
+
+.navbar ul {
+    flex: 1; /* 占据剩余空间，让它自适应居中 */
+    display: flex;
+    justify-content: center; /* 让导航菜单居中 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 66px; /* 让菜单项之间有间距 */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logout {
+    width: 153px; /* 固定宽度 */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* 让 Log out 按钮靠右 */
+    gap: 5px; /* 文字和图标之间的间距 */
+}
+
+.logout a{
+    text-decoration: none;
+    color: #333;
+}
+
+.logout img {
+    width: 24px; /* 适当调整登出图标大小 */
+    height: 24px;
+}
+
+
+.footer {
+    background-color: #c4c4c4; 
+    color: #0A142F;
+    font-size: 14px;
+}
+
+.footer-logo {
+    height: 40px; 
+}
+
+.footer .col-md-6 .mb-4 {
+    font-size: 14pt;
+}
+
+.footer-link {
+    color: #212529;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-email {
+    font-family: 'Poppins';
+}
+
+.footer .col-md-4 .mb-2, .footer small {
+    opacity: 75%;
+}
+
+.footer-link:hover {
+    color: #4157E9; 
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+.search-section {
+    align-items: center;
+    background-color: rgba(242, 242, 242, 1);
+    padding: 0 120px;
+    margin: 30px 0 46px 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right:20px; /* 搜索图标和输入框之间的间距 */
+}
+
+
+.search-container input {
+    flex: 1; /* 让输入框占据可用空间 */
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 5px;
+    font-size: 24px;
+    color: #606060;
+}
+
+
+.fliter {
+    margin-left: auto; 
+}
+
+
+.search img, .fliter img {
+    width: 30px;
+    height: 30px;
+}
+
+.search-section h1{
+    text-align: center;
+    color:rgba(65, 87, 233, 1);
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    line-height: 40px;
+}
+
+.recent-posts h2, .featured-section h2, .mediums-section h2 {
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    padding:60px 0 0 120px;
+    line-height: 30px;
+    font-style: sora;
+}
+
+.recent-posts a, .featured-section a, .mediums-section a, .related-posts a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: onest;
+    margin-bottom: 40px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.artists-container{
+    display: flex;
+    justify-content: space-between; /* 让内容均匀分布 */
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.artist{
+text-align: left;
+width: 300px;
+}
+
+.featured-section h5{
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: onest;
+    margin-bottom: 20px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.featured-section img{
+width:300px ;
+height:392px ;
+}
+
+
+.recent-posts{
+    background-color: rgba(255, 255, 255, 1);
+    top: 441px;
+    height: 1000px;
+}
+
+.featured-section{
+    top: 2384px;
+    height: 900px;
+}
+
+.mediums-section{
+    background-color: rgba(255, 255, 255, 1);
+    top: 441px;
+    height: 1000px;
+}
+
+
+.posts-container, .artists-container, .mediums-container {
+    display: flex;
+    gap: 27px;
+    overflow-x: auto;
+    padding:0 120px 0 120px ;
+    text-align: center;
+    flex: 1;
+}
+
+.btn-See-More {
+    text-decoration: none; 
+    background-color: #4157E9;
+    width: 128px;
+    color: white;
+    padding: 10px 20px;
+    margin-top:50px ;
+    margin-left: 656px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 100px;
+    border: none;
+    
+}
+
+
+
+.artwork-intro{
+    margin:auto;
+    background: white;
+    padding: 50px 120px 0 120px;
+    display: flex;
+    justify-content: space-between; /* 让内容均匀分布 */
+    align-items: flex-start;
+}
+
+.backgroundImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保图片填满整个区域，不留空隙 */
+}
+
+.artwork {
+    flex:1;
+    padding: 20px;
+    text-align: left;
+}
+
+.artwork h1{
+font-size: 20px;
+font-weight: 500 ;
+font-family: sora;
+
+}
+
+.tag1 {
+    width: 102px; 
+    display: inline-block;
+    background: #FAA0DD;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 107px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.tag2 {
+    width: 180px; 
+    display: inline-block;
+    background: #800039;
+    color: white;
+    padding: 5px 10px;
+    margin:0 0 0 10px;
+    border-radius: 107px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.comments {
+    flex:1;
+    border-left: 0.5px solid #000000;
+    width: 600px;
+    height: 630px;
+    margin-top: 20px;
+    
+}
+.comments h1{
+    margin: 0 0 35px 37px;
+    font-size: 20px;
+    font-family: sora;
+}
+
+.details h2, .PostedBy h2{
+    font-size: 20px;
+    font-family: sora;
+    margin-top: 58px;
+}
+
+.comment {
+    border-bottom: 0.5px solid #000000;
+    border-top: 0.5px solid #000000;
+    width: 600px;
+    height:120px;
+    padding: 35px 0 0 37px;
+}
+
+.PostedBy img{
+width: 35px;
+height: 35px;
+margin-right: 15px;
+}
+
+textarea {
+    padding: 35px 0 0 37px;
+    border: none;
+    width: 563px;
+    height: 210px;
+}
+
+.comment img{
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+.commentButton {
+    display: flex;
+    justify-content: flex-end; /* 水平方向靠右 */
+    align-items: flex-end;
+}
+
+.commentButton button{
+    background: #4157E9;
+    width: 128px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius:40px;
+    margin-top: 20px;
+}
+
+.related-posts{
+    background-color: rgba(255, 255, 255, 1);
+    top: 441px;
+    height: 610px;
+
+}
+
+.related-posts h2{
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    padding:60px 0 0 120px;
+    line-height: 30px;
+    font-style: sora;
+}
+
+
+.artist-overview{
+    background-color: #F2F2F2;
+    padding: 0 120px;
+    text-align: center;
+
+}
+
+.artist-overview img{
+    width: 150px;
+    height: 150px;
+}
+
+.artist-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 垂直居中 */
+    gap: 25px; /* 设置 img 和文本之间的间距 */
+}
+
+.artist-overview h1{
+    color: #4157E9;
+    font-size: 32px;
+    font-family: sora;
+    margin-bottom: 25px;
+}
+
+.artist-info h2{
+    color:#000000;
+    font-family: sora;
+    font-size: 24px;
+}
+
+.artist-info p{
+font-family: sora;
+font-size: 18px;
+color: #000000;
+}
+
+.artist-info{
+text-align: left;
+margin-bottom: 25px;
+}
+
+
+.description-content{
+    padding:0 120px;
+}
+.artist-description{
+    background-color: white;
+    margin-top: 110px;
+}
+
+.description-content h2{
+font-size: 20px; ;
+font-weight:500 ;
+color:#000000;
+font-family: sora;
+padding-top: 100px;
+}
+
+.description-content p{
+    font-size: 16px; ;
+    color:#000000;
+    font-family: sora;
+    margin-bottom: 60px;
+}
+
+.post{
+text-align:left;
+}
+.artwork-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 让左右按钮和图片区域分布在一行 */
+    width: 100%;
+}
+
+.prev,
+.next {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px; /* 按钮内边距 */
+}
+/* 响应式设计
+@media (max-width: 1440px) {
+    .right-column {
+        padding: 40px;
+    }
+
+    .recent-posts h2, .featured-section h2, .mediums-section h2 {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 1);
+
+    }
+
+    .signup h3, .login h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .signup .form-control, .login .form-control {
+        text-align: center;
+    }
+
+    .signup .mb-3, .signin .mb-3 {
+        text-align: center;
+    }
+
+    .signup .btn-signup, .login .btn-signup {
+        margin-top: 40px;
+    }
+    
+    .form-check {
+        justify-content: center; 
+        gap: 10px;
+    }
+} */

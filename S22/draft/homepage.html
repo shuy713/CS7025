@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cultura - Home Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="Cultura Logo">
+                </a>
+                <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Offcanvas sidebar menu -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title mt-2">MENU</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="hero-content mt-3 text-center">
+                <h2>Create, Share, and Inspire on Cultura</h2>
+                <p>Join Cultura to explore new artforms, share your work, and <br> connect with fellow creators. Sign up or log in to start!</p>
+                <a href="signup.html" class="btn btn-signup mt-2">Join Now</a>
+            </div>
+        </section>
+
+        <!-- Featured section -->
+        <section class="featured-section">
+            <div class="container">
+                <div class="text-center-container">
+                    <div class="info-container">
+                        <h2>Discover New Talent</h2>
+                        <p>Immerse yourself in the world of emerging artists and <br> discover fresh perspectives across a variety of art forms.</p>
+                        <a href="signup.html" class="btn btn-signup mt-2">Join Now</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="mb-4">FEATURED ARTISTS</h5>
+                    <div class="col-md-4 mt-3">
+                        <img class="artist-img" src="assets/img/kuniyoshi.png" alt="Utagawa Kuniyoshi's artwork">
+                        <div class="artist-info">
+                            <h5>Utagawa Kuniyoshi</h5>
+                            <p>Utagawa Kuniyoshi was one of the last great masters of the Japanese ukiyo-e style of woodblock prints.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <img class="artist-img" src="assets/img/richter.png" alt="Gerhard Richter's artwork">
+                        <div class="artist-info">
+                            <h5>Gerhard Richter</h5>
+                            <p>Gerhard Richter is a German visual artist. Richter has produced abstract as well as photorealistic paintings, and also photographs and glass pieces.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <img class="artist-img" src="assets/img/schinkel.png" alt="Karl Friedrich Schinkel's artwork">
+                        <div class="artist-info">
+                            <h5>Karl Friedrich Schinkel</h5>
+                            <p>Karl Friedrich Schinkel was a Prussian architect, city planner, and painter who also designed furniture and stage sets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mediums section -->
+        <section class="mediums-section">
+            <div class="container">
+                <div class="text-center-container">
+                    <div class="info-container">
+                        <h2>Discover New Mediums</h2>
+                        <p>Explore diverse art forms and uncover emerging mediums <br> that inspire creativity and innovation.</p>
+                        <a href="signin.html" class="btn btn-signup mt-2">Join Now</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="mb-4">MEDIUMS</h5>
+                    <div class="col-md-3 mt-3">
+                        <img class="medium-img" src="assets/img/ceramic.png" alt="Picture of a ceramic plate">
+                        <h5>Ceramic</h5>
+                    </div>
+                    <div class="col-md-3 mt-3">
+                        <img class="medium-img" src="assets/img/ink.png" alt="Artwork made with ink">
+                        <h5>Ink</h5>
+                    </div>
+                    <div class="col-md-3 mt-3">
+                        <img class="medium-img" src="assets/img/oilPainting.png" alt="Painting made with oil">
+                        <h5>Oil Paintings</h5>
+                    </div>
+                    <div class="col-md-3 mt-3">
+                        <img class="medium-img" src="assets/img/graphite.png" alt="Artwork made with graphite">
+                        <h5>Graphite</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 text-start">
+                        <img src="assets/img/logoIcon.png" alt="Cultura logo" class="footer-logo">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mb-4">College Green, Dublin 2, Ireland</p>
+                        <p class="mb-3"><a href="tel:+11111111110" class="footer-link">(111) 111-1110</a></p>
+                        <p class="mb-2"><a href="mailto:cultura@gmail.com" class="footer-link footer-email">cultura@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mb-2"><a href="index.html" class="footer-link">Home Page</a></p>
+                        <p class="mb-2"><a href="signup.html" class="footer-link">Sign Up</a></p>
+                        <p class="mb-2"><a href="login.html" class="footer-link">Log In</a></p>
+                        <br>
+                        <small>&copy; 2025 All rights <br> reserved.</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+         
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
